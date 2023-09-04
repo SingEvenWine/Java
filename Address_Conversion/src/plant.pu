@@ -1,0 +1,15 @@
+@startuml
+class SegPage {
+    -pageSize: int
+    -pageTables: ArrayList<int[]>
+    -segmentTable: int[][]
+    +setPageTables(): void
+    +setSegmentTable(): void
+    +printPageTables(): void
+    +printSegmentTable(): void
+    +printPageTableByPageNumber(segNum: int): void
+    +translate(segment: int, page: int, offset: int): int
+    +setPAGE_SIZE(): void
+    +Main(): void
+}
+@enduml

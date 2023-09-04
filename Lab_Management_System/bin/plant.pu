@@ -1,0 +1,36 @@
+@startuml
+class teacherMenu {
+    - laboratoryDAOlmpl: LaboratoryDAOlmpl
+    - teacherService: TeacherService
+    - teacherDAOlmpl: TeacherDAOlmpl 
+    - instrumentDAOlmpl: InstrumentDAOlmpl 
+    - teacherLabDAOlmpl: TeacherLabDAO 
+
+    + adminMenu()
+    + searchInstrument(): void
+    + searchLab(): void
+    + searchInstrumentByLab(): void
+    + searchInstrumentById(): void
+    + searchInstrumentByName(): void
+    + searchLabById(): void
+    + searchLabByLocation(): void
+    + searchLabByName(): void
+    + searchLabByInstrument(): void
+    + cancelLabApply(): void
+    + viewLabApply(): void
+    + reportDamage(): void
+    + applyLab(): void
+    + handleInstrument(): void
+    + modifyInstrument(): void
+    + deleteInstrument(): void
+    + addInstrument(): void
+    + modifyLab(): void
+    + deleteLab(): void
+    + addLab(): void
+    + handleLabApply(): void
+    + main(String[] args): void
+    + viewLabInfo(List<Laboratory> allLaboratories): void
+    + viewInstrumentInfo(List<Instrument> allInstruments): void
+    + main(String[] args): void
+}
+@enduml
